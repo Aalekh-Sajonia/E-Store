@@ -5,9 +5,17 @@
     .title {
         margin: 10px 0;
     }
-
+    @media screen and (max-width: 800px) {
+        width: unset;
+        margin-bottom: 80px;
+    }
     .buttons {
         display: flex;
         justify-content: space-between;
+        @media screen and (max-width: 800px) {
+            justify-content: center;
+            display: grid;
+            grid-gap: 10px;
+        } 
     }
 }

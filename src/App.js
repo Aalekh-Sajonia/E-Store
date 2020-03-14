@@ -1,5 +1,6 @@
 import React from 'react';
-import './App.css';
+
+import { GlobalStyle } from './global.styles';
 import ShopPage from './pages/shop/shop.component'
 import {Switch, Route, Redirect} from 'react-router-dom';
 import {connect} from 'react-redux';
@@ -45,6 +46,7 @@ class App extends React.Component {
 
     return (
       <div>
+      <GlobalStyle />
       <Header/>
       <Switch>
           <Route exact path='/' component={HomePage} />

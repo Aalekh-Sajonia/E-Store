@@ -1,6 +1,6 @@
 .menu-item {
   min-width: 30%;
-  height: 240px;
+  height: 380px;
   flex: 1 1 auto;
   display: flex;
   align-items: center;
@@ -23,16 +23,16 @@
   }
   
 
-  &.large {  //alse has .large
-    height: 380px;
-  }
-
   &:first-child {
     margin-right: 7.5px;
   }
 
   &:last-child {
     margin-left: 7.5px;
+  }
+  
+  @media screen and (max-width: 800px) {
+    height: 200px;
   }
   
   .background-image {
@@ -44,7 +44,7 @@
 
   .content {  // for nesting
     height: 90px;
-    padding: 0 25px;
+    padding: 0 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -59,11 +59,18 @@
       margin-bottom: 6px;
       font-size: 22px;
       color: #4a4a4a;
+
+      @media screen and (max-width: 800px) {
+        font-size: 12px;
+      }
     }
 
     .subtitle {
       font-weight: lighter;
       font-size: 16px;
+      @media screen and (max-width: 800px) {
+        font-size: 10px;
+      }
     }
   }
 }

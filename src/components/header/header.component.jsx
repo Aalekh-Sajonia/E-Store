@@ -6,7 +6,6 @@ import {ReactComponent as Logo} from '../../assets/crown.svg';
 import { auth } from '../../firebase/firebase.utils';
 import CartDropdown from '../cart-dropdown/cart-dropdown.component';
 import { selectCartHidden } from '../../redux/cart/cart.selector';
-import './header.style.scss';
 import { selectCurrentUser } from '../../redux/user/user.selector';
 import {HeaderContainer, LogoContainer, OptionsContainer, OptionLink} from './header.styles';
 const Header = ({currentUser, hidden}) => {
@@ -19,9 +18,9 @@ const Header = ({currentUser, hidden}) => {
                 <OptionLink to = '/shop'>
                     SHOP
                 </OptionLink>
-                <OptionLink to = '/shop'>
+             {/*   <OptionLink to = '/shop'>
                     CONTACT
-                </OptionLink>
+                    </OptionLink>  */}
                 {
                     currentUser ?
                     <OptionLink as={'div'} onClick={() => auth.signOut()}>SIGN OUT</OptionLink>

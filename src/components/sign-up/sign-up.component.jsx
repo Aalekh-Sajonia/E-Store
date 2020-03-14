@@ -90,7 +90,9 @@ const SignUp = () => {
                     required
                 > 
                 </FormInput>
-                <CustomButton type='submit'>SIGN UP</CustomButton>
+                <div className='buttons'>
+                    <CustomButton type='submit'>SIGN UP</CustomButton>
+                </div>
                 </form>
             </div>
         )
