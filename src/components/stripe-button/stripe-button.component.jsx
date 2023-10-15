@@ -9,7 +9,7 @@ const StripeCheckoutButton = ({price}) => {
     const publishableKey = 'pk_test_9dWliLPnsO5cCeX8m6Pp2VxT00HLKNu7wW';
     const ontoken = token => {
         axios({
-            url: 'https://glacial-temple-72481.herokuapp.com/payment',
+            url: 'https://e-store-be.onrender.com/payment',
             method: 'post',
             data: {
                 amount: priceForStripe,
